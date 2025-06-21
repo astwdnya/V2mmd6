@@ -1,0 +1,29 @@
+{
+  "inbounds": [{
+    "port": 443,
+    "protocol": "vless",
+    "settings": {
+      "clients": [{
+        "id": "c7fc1abc-1111-2222-3333-abcdefabcdef",
+        "flow": "xtls-rprx-direct",
+        "level": 0,
+        "email": "test@example.com"
+      }],
+      "decryption": "none"
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "serverName": "irancell.ir",
+        "alpn": ["http/1.1"]
+      },
+      "wsSettings": {
+        "path": "/v2ray"
+      }
+    }
+  }],
+  "outbounds": [{
+    "protocol": "freedom"
+  }]
+}
