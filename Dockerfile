@@ -9,4 +9,5 @@ RUN unzip /tmp/v2ray-linux-64.zip -d /v2ray && \
 
 COPY config.json /v2ray/config.json
 
-CMD ["/v2ray/v2ray", "-config", "/v2ray/config.json"]
+CMD ["v2ray", "run", "-config", "/v2ray/config.json"]
+
